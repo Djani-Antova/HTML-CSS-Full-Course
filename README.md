@@ -1,6 +1,6 @@
 
 # HTML & CSS May Course
-# <p align="center"><a href=https://softuni.bg/trainings/4114/html-and-css-may-2023> HTML & CSS May 2023 <a/>
+# <p align="center"><a href=https://softuni.bg/trainings/4114/html-and-css-may-2023> HTML & CSS May 2023 </a>
 
 The purpose of the course "HTML & CSS" is an initial familiarization and introduction to HTML5 and CSS3 technologies. Basic knowledge of web development, web browsers, HTML & CSS development tools is acquired and practical skills are developed using the web content description language HTML and the web content styling language CSS.
 
