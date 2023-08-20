@@ -1,5 +1,3 @@
-# HTML-CSS-Full-Course
-This is a repository with solutions of problems in Softuni Course HTML &amp; CSS Full
 
 # HTML & CSS May Course
 # <p align="center"><a href=https://softuni.bg/trainings/4114/html-and-css-may-2023> HTML & CSS May 2023 <a/>
