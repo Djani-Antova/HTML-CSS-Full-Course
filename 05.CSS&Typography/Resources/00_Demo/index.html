@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        header .fancy {
+        .header  {
             border-top: 10px solid red;
         }
+        .header.fancy {
+            border-top: 30px solid blue;
+        }
+        #header-home {
+            border-top: 100px solid lime;
+        }
+        .header.special.fancy {
+            border-top: 20px solid purple;
+        }
+
     </style>
 </head>
-<body>
-    <header>
-        <h1>Site title</h1>
+<body >
+    <header id ="header-home" class="header fancy special">
+        <h1 >Site title</h1>
     </header>
 
     <main>
         <article>
             <header>
-                <h2 class="fancy">Article title 1</h2>
+                <h2 >Article title 1</h2>
             </header>
             <section>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi hic dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos exercitationem? Dolores odio eaque ratione?</p>
