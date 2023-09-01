@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Document2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="typography.css">
     <style>
-        .card{
+        .card {
             display: block;
-           border: 1px solid #CCC;
-           padding: 2em;
-           border-radius: 0.5em;
-           max-width: 10em;
-           margin: 2em;
-           text-decoration: none;
-           color: #000;
+            border: 1px solid #CCC;
+            padding: 2em;
+            border-radius: 0.5em;
+            max-width: 10em;
+            margin: 2em;
+            text-decoration: none;
+            color: #000;
         }
+
         .card span {
             display: block;
         }
+
         .card .separator {
             display: none;
         }
@@ -26,11 +32,19 @@
         .card .title {
             font-weight: bold;
         }
+
         .card:hover {
             background-color: #F8F8F8;
         }
+
         .card:hover .title {
             text-decoration: underline;
+        }
+        .icon{
+            width: 1em;
+        }
+        .icon {
+            fill: aqua;
         }
     </style>
 </head>
@@ -38,103 +52,114 @@
 <body>
 
     <a href="#" class="card">
-       <span class="title">Card Title</span>
-       <span class="separator">-</span>
-       <span class="content">Description goes here</span>
+        <span class="title">Card Title</span>
+        <span class="separator">-</span>
+        <span class="content">Description goes here</span>
     </a>
 
-   <div href="#" class="card">
-       <div class="title">Card Title</div>
-       <div class="separator">-</div>
-       <div class="content">Description goes here</div>
+    <div href="#" class="card">
+        <div class="title">Card Title</div>
+        <div class="separator">-</div>
+        <div class="content">Description goes here</div>
     </div>
 
 
     <div class="site">
-        
 
-    <header id="header-home" class="header fancy special">
-        <h1>Site title</h1>
-    </header>
 
-    <main>
-        <article id="article-index-0">
-            <header>
-                <h2>Article title 1</h2>
-            </header>
-            <section>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi hic
-                    dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
-                    exercitationem? Dolores odio eaque ratione?</p>
+        <header id="header-home" class="header fancy special">
+            <h1>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                Site title
+            </h1>
+        </header>
+
+        <main>
+            <article id="article-index-0">
+                <header>
+                    
+                    <h2>Article title 1</h2>
+                </header>
                 <section>
-                    <header>
-                        <h3>Header Level 3</h3>
-                    </header>
-                    <p class="subtitle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam
-                        dicta cum, excepturi
-                        hic dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
-                        exercitationem? Dolores odio eaque ratione?</p>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi
-                        hic dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
+                        hic
+                        dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
+                        exercitationem? Dolores odio eaque ratione?</p>
+                    <section>
+                        <header>
+                            <h3>Header Level 3</h3>
+                        </header>
+                        <p class="subtitle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam
+                            dicta cum, excepturi
+                            hic dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
+                            exercitationem? Dolores odio eaque ratione?</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum,
+                            excepturi
+                            hic dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
+                            exercitationem? Dolores odio eaque ratione?</p>
+                    </section>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi
+                        hic
+                        dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
                         exercitationem? Dolores odio eaque ratione?</p>
                 </section>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi hic
-                    dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
-                    exercitationem? Dolores odio eaque ratione?</p>
-            </section>
-            <footer>
-                <p>Published on 24 Jan 2023</p>
-            </footer>
-        </article>
+                <footer>
+                    <p>Published on 24 Jan 2023</p>
+                </footer>
+            </article>
 
-        <article>
-            <header>
-                <h2>Article title 2</h2>
-            </header>
+            <article>
+                <header>
+                    <h2>Article title 2</h2>
+                </header>
+                <section>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi
+                        hic
+                        dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
+                        exercitationem? Dolores odio eaque ratione?</p>
+                    <header>
+                        <h4>Header Level 4</h4>
+                    </header>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi
+                        hic
+                        dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
+                        exercitationem? Dolores odio eaque ratione?</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi
+                        hic
+                        dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
+                        exercitationem? Dolores odio eaque ratione?</p>
+                    <header>
+                        <h5>Header Level 5</h5>
+                    </header>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi
+                        hic
+                        dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
+                        exercitationem? Dolores odio eaque ratione?</p>
+                </section>
+                <footer>
+                    <p>Published on 24 Jan 2023</p>
+                </footer>
+            </article>
+
+
+        </main>
+        <aside>
             <section>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi hic
-                    dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
-                    exercitationem? Dolores odio eaque ratione?</p>
-                <header>
-                    <h4>Header Level 4</h4>
-                </header>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi hic
-                    dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
-                    exercitationem? Dolores odio eaque ratione?</p>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi hic
-                    dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
-                    exercitationem? Dolores odio eaque ratione?</p>
-                <header>
-                    <h5>Header Level 5</h5>
-                </header>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam dicta cum, excepturi hic
-                    dolores sequi deserunt unde eveniet commodi, optio voluptatibus nam magni dignissimos
-                    exercitationem? Dolores odio eaque ratione?</p>
+                <h3>Archive</h3>
+                <ul>
+
+                    <li><a href="#">March 2023</a></li>
+                    <li><a href="#">April 2023</a></li>
+                    <li><a href="#">May 2023</a></li>
+                </ul>
             </section>
-            <footer>
-                <p>Published on 24 Jan 2023</p>
-            </footer>
-        </article>
 
+        </aside>
+        <footer>
+            <p>Site footer &copy All rights reserved</p>
+        </footer>
 
-    </main>
-    <aside>
-        <section>
-            <h3>Archive</h3>
-            <ul>
-
-                <li><a href="#">March 2023</a></li>
-                <li><a href="#">April 2023</a></li>
-                <li><a href="#">May 2023</a></li>
-            </ul>
-        </section>
-
-    </aside>
-    <footer>
-        <p>Site footer &copy All rights reserved</p>
-    </footer>
-
-</div>
+    </div>
 
 </body>
 
