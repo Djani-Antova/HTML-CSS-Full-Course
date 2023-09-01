@@ -1,0 +1,17 @@
+/* Import FontAwesome */
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+/* Reset default margin and padding */
+body,
+button {
+    font: 12px/1.5 Verdana, sans-serif
+}
+
+/* Apply styling to the sections */
+/* section {
+    margin-bottom: 40px;
+} */
+
+
+
+
