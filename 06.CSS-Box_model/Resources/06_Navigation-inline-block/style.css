@@ -1,0 +1,31 @@
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    font: inherit;
+}
+
+header h1 {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+body>header {
+    border-bottom: 2px solid black;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+
+}
+
+a {
+    color: green;
+}
