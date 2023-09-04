@@ -1,0 +1,31 @@
+/* Variables */
+:root {
+    --white-space: 1.5em;
+}
+
+html {
+    font: 16px/1.5 Verdana, sans-serif;
+}
+body, table, textarea, input, button, option, label {
+    font: inherit;
+}
+p, ul, ol, dt {
+    padding-bottom: var(--white-space, 1.5em);
+}
+ul, ol, dt {
+    padding-left: calc( 1.5 * var(--white-space, 1.5em));
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    line-height: 1.1;
+    /* Calculating spacing based on a CSS Variable */
+    margin: calc( 0.6 * var(--white-space, 1.5em)) 0 calc( 0.3 * var(--white-space, 1.5em))
+}
+
+h1 {font-size: 3em}
+h2 {font-size: 2.2em}
+h3 {font-size: 1.6em}
+h4 {font-size: 1.4em}
+h5 {font-size: 1.1em}
+h6 {font-size: 1em}
