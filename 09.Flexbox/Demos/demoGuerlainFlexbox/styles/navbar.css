@@ -1,0 +1,63 @@
+.site-header {
+    background: #369;
+    display:flex;
+    align-items: center;
+    padding: 0 2em;
+    margin-top: 1em;
+    border-radius: 0.5em;   
+    justify-content: space-between; 
+    height: 5em;
+}
+
+.site-header.reversed {
+    flex-direction: row-reverse;
+}
+
+.site-header, 
+.site-header a {
+    color: #fff; 
+}
+
+.site-header h1 svg {
+    width: 1em;    
+    transform: rotate(10deg);
+    height: auto;
+    fill: #fff;
+    margin: 0 0.5em;
+
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.site-header.reversed .main-nav {
+  
+    align-self: flex-end;
+}
+
+.main-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav li,
+.main-nav li a {
+    display: block;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    padding: 0.5em 0.8em;
+}
+
+.main-nav li a:hover {
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: white;;
+    color: #369;
+} 
+
+
+
