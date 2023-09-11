@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+
+       *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 2em;
+            
+        }
+
+        .main-nav {
+            background: #369;
+            padding: 1em;
+            border-radius: 0.5em ;
+            
+        }
+
+        .main-nav a {
+            color: #fff;
+        }
+
+        .main-nav ul ul {
+            display: none;
+        }
+
+        .main-nav > ul {
+            display: flex;
+            gap: 1em;
+        }
+
+        .main-nav li,
+        .main-nav a {
+            display: block;
+        }
+
+        .main-nav li {
+            border: 1px solid transparent;
+            position: relative;
+        }
+
+        .main-nav li:hover {
+            border: 1px solid red;
+        }
+
+        .main-nav li:hover >ul {
+            display: block;
+        }
+
+        
+
+        .main-nav a {
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 0.2em;
+            padding: 0.5em 0.8em;
+        }
+
+        .main-nav li:hover > a,
+        .main-nav a:hover {
+            background: rgba(255, 255, 255, 0.8);
+            color: #369;
+        }
+
+        .main-nav ul ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 20em;
+            background: #369;
+        }
+        .main-nav ul ul ul {
+            left: 100%;
+            top: 0;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li>
+                <a href="#h21">History</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li>
+                        <a href="#">Link 2</a>
+                        <ul>
+                            <li><a href="#">Link 1 2 1</a></li>
+                            <li><a href="#">Link 1 2 2</a></li>
+                            <li><a href="#">Link 1 2 3</a></li>
+                            <li><a href="#">Link 1 2 4</a></li>
+    
+                        </ul>
+                    </li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#h22">LVMH Group</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#h23">Products</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+
+                </ul>
+            </li>
+       
+        </ul>
+    </nav>
+    
+</body>
+</html>
