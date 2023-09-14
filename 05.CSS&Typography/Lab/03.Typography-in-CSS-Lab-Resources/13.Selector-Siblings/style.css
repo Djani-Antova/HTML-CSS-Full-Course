@@ -1,0 +1,8 @@
+span + p {
+    color: red;
+  }
+  
+  span ~ p {
+    font-weight: bold;
+  }
+  
