@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">What is Box
+            Model?</a></h1>
+    <p>Everything in CSS has a box around it, and understanding these boxes is key to being able to create more complex
+        layouts with CSS, or to align items with other items.</p>
+    <p>The CSS box model as a whole applies to block boxes and defines how the different parts of a box — margin,
+        border, padding, and content — work together to create a box that you can see on a page. Inline boxes use just
+        some of the behavior defined in the box model.</p>
+
+    <h2>Inline and <span>Block Elements</span></h2>
+
+    <h3>Inline Elements</h3>
+    <p>You can think of inline elements as the ones that need to be part of text.</p>
+
+    <p>
+        <img class="align-right"
+            src="https://images.unsplash.com/photo-1682686581312-506a8b53190e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=170&q=80">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quasi voluptatum? Ex, aliquid ea iure
+        recusandae laborum modi odio nisi, mollitia eius eaque aperiam itaque praesentium maiores incidunt nulla
+        dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quasi voluptatum? Ex, aliquid ea iure
+        recusandae laborum modi odio nisi, mollitia eius eaque aperiam itaque praesentium maiores incidunt nulla
+        dignissimos.
+        <img class="align-left"
+            src="https://images.unsplash.com/photo-1682686581312-506a8b53190e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=170&q=80">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quasi voluptatum? Ex, aliquid ea iure
+        recusandae laborum modi odio nisi, mollitia eius eaque aperiam itaque praesentium maiores incidunt nulla
+        dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quasi voluptatum? Ex, aliquid ea iure
+        recusandae laborum modi odio nisi, mollitia eius eaque aperiam itaque praesentium maiores incidunt nulla
+        dignissimos.
+    </p>
+
+    <h3>Block Elements</h3>
+    <p>Elements that take all the available space and create a new-line on before and after themselves.</p>
+
+    <h3>Inline-Block Elements</h3>
+    <p>There is an option to set the display property of an element to display block. This enables specific styling
+        options, but its not a replacement for Block elments and its not intended to be used for Layout creation.</p>
+
+    <p class="inline-block">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus mollitia autem ut eum sunt, possimus nostrum blanditiis est fugiat obcaecati a nesciunt quis, incidunt neque soluta quod modi at excepturi!
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+        <span>Span 4</span>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime laborum libero ad voluptatem omnis assumenda inventore eveniet delectus amet velit, officia quasi voluptas iure eius quas magni fugit veniam dignissimos!
+    </p>
+
+    <h2>Element sizing - Width & Height</h2>
+
+    <h3>Width</h3>
+    <p>Setting horizontal size</p>
+
+    <h3>Height</h3>
+    <p>Setting vertical size</p>
+
+    <h3>Max, Min - Width or Height</h3>
+    <p>Additional options for controlling sizing</p>
+
+    <div class="box">
+        <div class="box-contents">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nobis aut eum minus veritatis harum
+            architecto quos dicta doloremque fugit iusto doloribus, accusamus voluptas. Tempora odit quasi delectus
+            consectetur eius.
+        </div>
+    </div>
+
+    <h2>Margin and Padding</h2>
+    <p>External and Internal spacing</p>
+
+    <h2>Border</h2>
+    <p>All the borders!</p>
+
+    <h2>What happens when things don't fit?!</h2>
+
+    <h3>Overflow</h3>
+
+    <h2>How is sizing calculated?</h2>
+
+    <h3>The standard CSS box model</h3>
+    <code>
+<pre>
+.box {
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
+}
+</pre>
+</code>
+
+    <p>The actual space taken up by the box will be 410px wide (350 + 25 + 25 + 5 + 5) and 210px high (150 + 25 + 25 + 5
+        + 5).</p>
+    <p><img
+            src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/standard-box-model.png">
+    </p>
+
+    <h3>The alternative CSS box model</h3>
+    <p>In the alternative box model, any width is the width of the visible box on the page. The content area width is
+        that width minus the width for the padding and border (see image below). No need to add up the border and
+        padding to get the real size of the box.</p>
+    <p>To turn on the alternative model for an element, set box-sizing: border-box on it:</p>
+
+    <code>
+<pre>
+.box {
+  box-sizing: border-box;
+}
+</pre>
+</code>
+
+    <p>If we assume the box has the same CSS as above:</p>
+
+    <code>
+<pre>
+.box {
+  width: 350px;
+  inline-size: 350px;
+  height: 150px;
+  block-size: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
+}
+</pre>
+</code>
+
+    <p>Now, the actual space taken up by the box will be 350px in the inline direction and 150px in the block direction.
+    </p>
+
+    <p><img
+            src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/alternate-box-model.png">
+    </p>
+
+    <p>To use the alternative box model for all of your elements (which is a common choice among developers), set the
+        box-sizing property on the <html> element and set all other elements to inherit that value:</p>
+
+    <code>
+<pre>
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+</pre>
+</code>
+
+    <h3>Demo</h3>
+
+    <div class="inline-block-layout">
+        <div class="column">C1</div>
+        <div class="column">C2 asdsdkf jl;sadjkf;lasdkj falksdjf ;aldskjf ;lsdjkldkja;ldjkf l;asdkjl;sak d;lkj</div>
+        <div class="column">C3</div>
+    </div>
+
+</body>
+
+</html>
