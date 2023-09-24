@@ -1,26 +1,15 @@
-.top-bar {
+body {
+    background: url(../image/fitness-main.jpg);
+    background-size: 120% auto;
+    background-position: center -12em;
+    background-repeat: no-repeat;
+}
+.site {
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    padding: 0.5em 1em;
-    background: #D01919;
-    color: #ffffff;
-}
-.socials {
-    padding: 0;
-    margin: 0;
-    display: flex;
+    flex-direction: column;
 }
 
-.socials li,
-.socials a {
-    display: block;
-}
-
-.socials li {
-    padding: 0 0.5em;
-}
-
-.socials a {
-    color: #ffffff;
-    text-decoration: none;
-}
+.site-footer {
+    margin-top: auto;
+} 
