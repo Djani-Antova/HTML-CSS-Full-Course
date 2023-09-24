@@ -1,0 +1,39 @@
+.top-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    background: #D01919;
+    color: #ffffff;
+}
+
+.top-bar p {
+    padding: 0;
+}
+
+.socials {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.socials li,
+.socials a {
+    display: block;
+}
+
+.socials li {
+    padding: 0 0.5em;
+}
+
+.socials a {
+    color: #fff;
+}
+
+
+
+.site-header .site-title {
+    display: none;
+}
+
+
