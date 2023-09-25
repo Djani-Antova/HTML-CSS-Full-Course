@@ -31,3 +31,27 @@
     background: #fff;
     min-height: 20em;
 }
+
+.section-coaches {
+
+}
+
+.columns {
+    display: flex;
+    gap: 10em;
+}
+
+.columns img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.columns li,
+.columns li span {
+    display: block;
+}
+
+.columns li {
+    flex: 1 1 30%;
+}
