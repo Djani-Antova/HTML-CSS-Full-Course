@@ -1,6 +1,5 @@
 .top-bar {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     padding: 0.5em 1em;
     background: #D01919;
