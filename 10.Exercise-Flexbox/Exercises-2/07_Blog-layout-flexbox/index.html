@@ -12,34 +12,49 @@
             box-sizing: border-box;
         }
 
-        body {
+        html {
             font-family: Verdana, sans-serif;
+        }
+
+        blockquote,
+        h2, h3, h4, h5, h6 {
+            font-family: Georgia, serif;
+        }
+
+        body {
+           
+            background: rgb(238, 238, 238);
         }
 
         .page {
             display: flex;
             flex-wrap: wrap;
-            padding: 4em;
-
+            max-width: 60em;
+            margin: 4em auto;
+            gap: 2em;
         }
 
-        header {
-            padding-bottom: 2em;
+        .page > header {
             text-transform: uppercase;
-            font-size: larger;
+            border-bottom: 2px solid #000;
+            flex: 1 1 100%;
+            padding-bottom: 2em;
         }
 
-        .content {
-            border-top: 3px solid #000;
-            padding-top: 2em;
+        article.post {
+            padding-top: 1em;
         }
 
         h2,
         h3,
-        h4,
-        p {
+        h4 {
             padding-bottom: 1em;
         }
+
+        p {
+            padding-bottom: 1.5em;
+        }
+        
 
         .content {
             display: flex;
@@ -57,51 +72,46 @@
 
         ul {
             padding-bottom: 2em;
+            padding-left: 2.5em; 
 
         }
 
         a {
             text-decoration: none;
-            color: rgb(0, 149, 7);
+            color: rgb(0, 154, 0);
         }
       
         .align-right img {
             float: right;
             margin: 0 1em 1em 1em;
-            border: .2em solid black;
+            border: 6px solid black;
             padding: 0.5em;
-            box-shadow:  0 0.2em  0.2em 0.2em rgba(0, 0, 0, 0.1)
+            box-shadow:  0 0  1em 0.2em rgba(0, 0, 0, 0.2)
        
         }
 
         .align-left img {
             float: left;
-            margin: 0 2em 2.5em 0;
-            border: .2em solid black;
+            margin: 0 2em 0.5em 0;
+            border: 6px solid black;
             padding: 0.5em;
-            box-shadow:  0 0.2em  0.2em 0.2em rgba(0, 0, 0, 0.1)
+            box-shadow:  0 0  1em 0.2em rgba(0, 0, 0, 0.2)
         }
 
-        img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #000;
-        }
-
-        blockquote {
-            
-            padding: 0 0 0 2em;
-            /* margin-left: 2em; */
+        blockquote {            
+            padding-left: 2em;
             font-style: italic;
             flex: 1;
-            margin-left: 0; /* Remove this margin */
-        }
+            margin-left: 0; 
+            margin-bottom: 1em;
+        }     
+        
         .text-quote {
             display: flex;   
             align-items: flex-start;
             justify-content: space-between;    
         }
+
         .text-quote p {
             flex: 1;
             padding-right: 2em;
@@ -111,13 +121,17 @@
         
         .text-quote>p {
             border-right: 2px solid #ccc;
-            padding-bottom: 1em;
-
         }
 
         blockquote p {
             float: right;
-            clear: both; 
+            clear: both;  
+            margin-bottom: 2em !important;
+            padding-bottom: 1.5em  !important;                   
+        }
+        
+        blockquote>p {
+            margin-bottom: 2em;
         }
 
     </style>
