@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center Flexbox</title>
+    <title>Expanding Flexcard</title>
     <style>
         * {
             padding: 0;
@@ -14,46 +14,65 @@
 
         body {
             background: rgb(238, 238, 238);
-            /* display: flex; */
-        }
-
-        .container {
-            display: flex;        
-            min-height: 100vh; 
-           
-        }
-
-        .container img {
-            display: block;
-        }
-
-        .container ul {
             display: flex;
             align-items: center;
-            gap: 2em;   
-            background: beige;
-        }
-        .container ul li {
-            list-style: none;
-            background: rgb(158, 171, 213);
-            padding: 2em;
+            justify-content: center;
+            min-height: 100vh;
         }
 
-        
+        .card {
+            display: flex;
+        }
+
+        .card ul {
+            display: flex;
+            gap: 1em;
+        }
+
+        .card li {
+            /* display: block; */
+            width: 10em;
+            height: 25em;
+            overflow: hidden;
+            border-radius: 0.5em;
+            box-shadow: 0  0 1em 0.5em rgba(0, 0, 0, 0.5);
+            transition: width 0.3s ease-in-out;
+        }
+
+        .card img {
+            display: block;
+            width: auto;
+            height: 100%;
+            transform: translateX(-50%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        li:hover {
+            width: 30em;
+        }
+
+        li:hover img {
+            transform: translateX(0);
+        }
+
+  
+
     </style>
 </head>
 
 <body>
-   
-  <section class="container">
-    <ul>
-        <li><img src="images/Image1.jpg" alt=""></li>
-        <li><img src="images/Image2.jpg" alt=""></li>
-        <li><img src="images/Image3.jpg" alt=""></li>
-        <li><img src="images/Image4.jpg" alt=""></li>       
-    </ul>
-  </section>
-   
+
+    <section class="card">
+        <ul>
+            <li><img src="images/Image1.jpg" alt=""></li>
+            <li><img src="images/Image2.jpg" alt=""></li>
+            <li><img src="images/Image3.jpg" alt=""></li>
+            <li><img src="images/Image4.jpg" alt=""></li>
+        </ul>
+    </section>
+
+
+
 </body>
 
 
