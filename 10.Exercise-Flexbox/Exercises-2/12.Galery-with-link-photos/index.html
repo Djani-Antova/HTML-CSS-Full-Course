@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Flexbox</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            background: #ddd;
+            padding: 3em;
+            justify-content: center;
+        }
+
+        .gallery {
+            display: flex;
+            max-width: 50em;
+        }
+
+        .gallery ul {
+            display: flex;
+            flex-wrap: wrap;           
+            list-style: none;             
+            gap: 2em;
+            
+        }
+
+        
+        .gallery li {
+            flex: 1 1 200px;
+            display: flex;
+            border: 6px solid black;
+            background: #fff; 
+            align-items: center;
+            padding: 2em 1em;
+            box-shadow: 
+                0 0 1.2em 0.2em rgba(0, 0, 0, 0.3),
+                0 0 0.3em 0.1em rgba(0, 0, 0, 0.3) inset;
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery::before,
+        .gallery::after {
+            display: block;
+            content: '';
+            flex: 1 1 200px;
+            order: 1000;
+        }
+
+    
+
+    
+    </style>
+</head>
+
+<body>
+    <section class="gallery">
+        <ul class="card-list">
+            <li><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="photo1"></div></li>
+            <li><img src="https://images.unsplash.com/photo-1534211698458-e2be12c1a94c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2049&q=80" alt="photo2"></div></li>
+            <li><img src="https://images.unsplash.com/photo-1442458017215-285b83f65851?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="photo3"></div></li>
+            <li><img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1875&q=80" alt="photo4"></div></li>
+            <li><img src="https://images.unsplash.com/photo-1474112704314-8162b7749a90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="photo5"></div></li>
+            <li><img src="https://plus.unsplash.com/premium_photo-1666722157999-67656cc7e1fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="photo6"></div></li>
+            <li><img src="https://images.unsplash.com/photo-1558350315-8aa00e8e4590?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="photo7"></div></li>
+            <li><img src="https://images.unsplash.com/photo-1615280825886-fa817c0a06cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="photo8"></div></li>
+            <li><img src="https://images.unsplash.com/photo-1462524500090-89443873e2b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="photo9"></div></li>
+        </ul>
+    </section>
+</body>
+
+</html>
