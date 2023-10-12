@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Flexcard</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgb(238, 238, 238);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            display: flex;
+        }
+
+        .card ul {
+            display: flex;
+            gap: 1em;
+        }
+
+        .card li {
+            /* display: block; */
+            width: 100px;
+            height: 25em;
+            overflow: hidden;
+            border: 3px solid #fff;
+            border-radius: 0.5em;
+            box-shadow: 0  0 1em 0.5em rgba(0, 0, 0, 0.5);
+            transition: width 0.3s ease-in-out;
+        }
+
+        .card img {
+            display: block;
+            width: auto;
+            height: 100%;
+            transform: translateX(-50%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        li:hover {
+            width: 200px;
+        }
+
+        li:hover img {
+            transform: translateX(0);
+        }
+
+  
+
+    </style>
+</head>
+
+<body>
+
+    <section class="card">
+        <ul>
+            <li><img src="https://images.unsplash.com/photo-1584448141569-69f342da535c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1941&q=80" alt="poster1"></li>
+            <li><img src="https://images.unsplash.com/photo-1613679074971-91fc27180061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="poster2"></li>
+            <li><img src="https://images.unsplash.com/photo-1579702493440-8b1b56d47e03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80" alt="poster3"></li>
+            <li><img src="https://images.unsplash.com/photo-1497514440240-3b870f7341f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" alt="poster4"></li>
+        </ul>
+    </section>
+
+
+
+</body>
+
+
+</html>
