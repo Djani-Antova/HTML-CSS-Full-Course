@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Feature: Width</title>
     <link rel="stylesheet" href="./responsive.css" />
+    <style>
+         @media (width: 360px) { /* Mobile styling */
+            article {
+                color: red;
+            }         
+        }
+
+        @media (min-width: 35rem) { /* Mobile styling */
+            article {
+                background: yellow;
+            }         
+        }
+
+        @media (max-width: 50rem) { /* Desktop styling */
+            article {
+                border: 2px solid blue;
+            }
+            
+          
+        }
+    </style>
 </head>
 
 <body>
