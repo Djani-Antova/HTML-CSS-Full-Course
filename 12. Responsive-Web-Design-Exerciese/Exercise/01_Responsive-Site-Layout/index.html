@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site Layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            padding: 2em;
+            display: flex;
+            flex-wrap: wrap;       
+            gap: 1em;
+        }
+
+        body>* {
+            background: lightblue;
+            border: 1px solid black;
+            border-radius: 0.3em;
+            padding: 1em;            
+        }
+        header, footer {            
+            flex: 1 1 100%;
+        }
+        main {
+            flex: 1 1 70%;
+        }
+        aside {
+            display: flex;
+            flex: 1 1 25%;
+            padding-left: 1em;
+        }
+
+
+        main h2 {
+            padding-bottom: 0.5em;
+        }
+
+        
+        main ul {
+            padding-left: 2em; 
+        }
+
+        aside li {
+            display: block;      
+            padding: 0.2em 0;
+        }
+
+        aside li a {
+           text-decoration: none;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                flex-direction: column;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+
+    <main>
+        <h2>Tasks: 6</h2>
+        <ul>
+            <li>Open: 3</li>
+            <li>In Progres: 3</li>
+            <li>Done: 3</li>
+        </ul>
+    </main>
+
+    <aside>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Create</a></li>
+        </ul>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2021 - Task Board</p>
+    </footer>
+    
+</body>
+</html>
