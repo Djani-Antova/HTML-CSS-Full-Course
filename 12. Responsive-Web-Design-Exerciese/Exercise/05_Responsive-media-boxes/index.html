@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Media Boxes</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+
+            font: 16px/1.5 Helvetica, sans-serif;
+
+        }
+
+        h2 {
+            padding-bottom: 15px;
+            font: 1em/1.2 Georgia, serif;
+        }
+
+
+        body {
+            background: rgb(238, 238, 238);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section {
+            margin: 4em;
+            display: flex;
+            flex-direction: column;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            display: block;
+            width: 20vw;
+            height: auto;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+        }
+
+        div {
+            width: 20vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card {
+            border-radius: 10px;
+            display: flex;
+
+        }
+
+        .card div h4,
+        .card p {
+            padding-bottom: 20px;
+            padding-top: 10px;
+            padding: 20px 20px;
+        }
+
+        .button {
+            display: flex;
+            padding-right: 1em;
+
+        }
+
+        div>p>a {
+            background: green;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin-left: auto;
+            border-radius: 5px;
+        }
+
+        @media (min-width: 500px) {
+            html {
+                font-size: 10px;
+            }
+        }
+
+        @media (min-width: 600px) {
+            html {
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width: 800px) {
+            html {
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width: 1300px) {
+            html {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width: 1800px) {
+            html {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="card">
+        <div>
+            <img src="https://images.unsplash.com/photo-1538230942844-e89414a0692d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34dcc54db235ce71b59c1d5ada02bdc4&auto=format&fit=crop&w=400&q=80"
+                alt="">
+        </div>
+        <div>
+            <h4>Card Title</h4>
+            <p>Short description of what this is all about - crafted to make people interested</p>
+            <p class="button"><a href=""><span>See more</span></a></p>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
