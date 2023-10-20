@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Sections</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* padding: 2em; */
+            border: 4px solid green;
+            min-height: 100vh;
+            /*This is important! */
+        }
+
+        body>* {
+            border: 1px solid #333;
+            padding: 2em;
+        }
+
+        .container {
+            max-width: 80em;
+            margin: 0 auto; 
+            border: 2px solid blue; 
+            text-align: center;       
+        }
+        .section-top-bar {
+            background: darkred;
+            color: white;
+        }
+
+        
+
+        .section-header,
+        .section-banner {
+            background: black;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+
+
+    <div class="section-top-bar">
+        <div class="container">
+            <p>Top Bar</p>
+        </div>
+    </div>
+
+    <header class="section-header">
+        <div class="container">
+            <p>Header</p>
+        </div>
+    </header>
+
+    <section class="section-banner">
+        <div class="container">
+            <p>Banner</p>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <div class="container">
+            <p>Section</p>
+        </div>
+    </section>
+
+    <footer class="section-footer">
+        <div class="container">
+            <p>This is a footer</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
